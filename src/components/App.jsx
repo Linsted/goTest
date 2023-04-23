@@ -1,7 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+import { lazy } from "react";
+import {Layout} from "./Layout/Layout";
+
+const Tweets = lazy(() => import("../pages/Tweets"));
+const Home = lazy(() => import("../pages/Home"));
+
+
+
 export const App = () => {
   return (
-    <div>
-      React homework template
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="/tweets" element={<Tweets />} />
+        </Route>
+      </Routes>
+    </>
   );
 };
