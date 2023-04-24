@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addUsers, fetchUsers } from "redux/operations";
 import { getUsers } from "redux/selectors";
 import { ListStyled } from "./CardList.styled";
+import { ButtonAddStyled } from "./Buttons/Button.styled";
 
 
 
@@ -27,11 +28,13 @@ export const CardList = () => {
       useEffect(() => {
        dispatch(fetchUsers(PER_PAGE)) 
 
-    },[])
+    },[dispatch])
     return (<>
         
-        <ListStyled>{users.map(element => <CardItem key={element.id} user={element}/>)}</ListStyled>
-        {currentPage <= pageQuantity && <button type="button" onClick={handleClick}>Add</button>}
+        <ListStyled>{users.map(element => <CardItem key={element.id} user={element} />)}
+        {currentPage <= pageQuantity && <ButtonAddStyled type="button" onClick={handleClick}>Load More</ButtonAddStyled>}
+        </ListStyled>
+        
     
     </>)
 }

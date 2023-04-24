@@ -6,7 +6,6 @@ const initialState = {
     users: [],
     isLoading: false,
     error: null,
-    isFollowed: false,
     
 
 };
@@ -14,6 +13,8 @@ const initialState = {
 const usersSlice = createSlice({
     name: "users",
     initialState,
+
+
 
     extraReducers: {
         [fetchUsers.fulfilled](state, actions) {
