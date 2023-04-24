@@ -2,7 +2,7 @@ import { CardItem } from "components/CardItem/CardItem";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addUsers, fetchUsers } from "redux/operations";
-import { getPage, getUsers } from "redux/selectors";
+import { getUsers } from "redux/selectors";
 import { ListStyled } from "./CardList.styled";
 
 
