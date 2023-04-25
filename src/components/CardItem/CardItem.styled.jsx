@@ -83,7 +83,7 @@ border: 8px solid #EBD8FF;
 
 `;
 
-export const TextTweetsStyled = styled.p`
+export const TextTweetsStyled = styled.span`
 
 font-family: 'Montserrat';
 font-style: normal;
@@ -97,7 +97,7 @@ color: #EBD8FF;
 
 `;
 
-export const TextFollowersStyled = styled.p`
+export const TextFollowersStyled = styled.span`
 
 font-family: 'Montserrat';
 font-style: normal;

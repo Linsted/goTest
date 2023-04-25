@@ -25,9 +25,7 @@ export const rootReducer = {
         users: persistReducer(authPersistConfig, usersReducer), 
 };
 
-// export const rootReducer = {
-//         follow:  usersReducer, 
-// };
+
 
 export const store = configureStore({
   reducer: rootReducer,

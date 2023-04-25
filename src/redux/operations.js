@@ -12,11 +12,11 @@ export const fetchUsers = createAsyncThunk(
       
     try {
         const response = await axios.get(`/users?p=1&l=${PER_PAGE}`, );
-        // console.log(response)
+   
         return response.data;
         
     } catch (e) {
-        console.log("Error")
+
       return thunkAPI.rejectWithValue(e.message);
     }
   }
@@ -27,13 +27,13 @@ export const addUsers = createAsyncThunk(
     async ({PER_PAGE, currentPage}, thunkAPI) => {
       
         try {
-        console.log(currentPage)
+
         const response = await axios.get(`/users?p=${currentPage}&l=${PER_PAGE}`, );
-        // console.log(response);
+
         return response.data;
         
     } catch (e) {
-        console.log("Error")
+
       return thunkAPI.rejectWithValue(e.message);
     }
   }
