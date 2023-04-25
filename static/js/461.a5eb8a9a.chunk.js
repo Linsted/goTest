@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[461],{9081:function(e,t,n){n.r(t),n.d(t,{default:function(){return s}});var r=n(6966),a=n.p+"static/media/pexels-josh-sorenson-977603.d26b3dfcb32cac0d7e7d.jpg",c=n(184),s=function(){return(0,c.jsx)(c.Fragment,{children:(0,c.jsx)(r.Ul,{src:a,alt:"Road sign"})})}}}]);
+//# sourceMappingURL=461.a5eb8a9a.chunk.js.map
